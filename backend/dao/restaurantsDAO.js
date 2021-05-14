@@ -38,7 +38,7 @@ export default class RestaurantsDAO {
         try {
             cursor = await restaurants.find(query)
         } catch (e) {
-            console.erro(`Unable to issue find command, ${e}`)
+            console.error(`Unable to issue find command, ${e}`)
             return { restaurantsList: [], totalNumRestaurants: 0}
         }
     
