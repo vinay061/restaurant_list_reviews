@@ -11,7 +11,10 @@ class RestaurantDataService {
         return http.get(`/id/${id}`);
     }
 
-    find(query, by = "name", page = 0) {
+    //find(query, by = "name", page = 0)
+    find(query, by, page = 0) {
+        console.log(by);
+    
         //return http.get(`restaurants?${by}=${query}&page=${page}`);
         return http.get(`?${by}=${query}&page=${page}`);
     }

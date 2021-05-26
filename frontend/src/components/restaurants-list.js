@@ -85,7 +85,7 @@ const RestaurantsList = (props) => {
     return (
         <div>
            <div className="row pb-1">
-               <div className="input-group col-lg-4">
+               <div className="input-group mb-3">
                 <input
                     type="text"
                     className="form-control"
@@ -153,9 +153,9 @@ const RestaurantsList = (props) => {
                                        <strong>Address: </strong>{address}
                                    </p>
                                    <div className="row">
-                                    <Link to={"/restaurants/"+restaurant._id} className="btn btn-primary col-lg-5 mx-1 mb-1">
-                                        View Reviews
-                                    </Link>
+                                        <Link to={"/restaurants/"+restaurant._id} className="btn btn-primary col-lg-5 mx-1 mb-1">
+                                            View Reviews
+                                        </Link>
                                     <a target="_blank" rel="noreferrer" href={"https://www.google.com/maps/place" + address} className="btn btn-primary col-lg-5 mx-1 mb-1">View Map</a>
                                    </div>
                                </div>
